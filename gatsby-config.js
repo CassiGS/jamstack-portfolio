@@ -4,7 +4,7 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitleAlt: `Cassi Gallagher-Shearer Creative`,
   },
   plugins: [
     {
@@ -12,24 +12,17 @@ module.exports = {
       options: {
         navigation: [
           {
-            title: `Blog`,
-            slug: `/blog`,
-          },
-          {
-            title: `About`,
-            slug: `/about`,
+            title: `Projects`,
+            slug: `/projects`,
           },
         ],
         externalLinks: [
           {
-            name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
-          },
-          {
             name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            url: `https://www.instagram.com/cassigs_creative`,
           },
         ],
+        blogPath: `/projects`,
       },
     },
     {
