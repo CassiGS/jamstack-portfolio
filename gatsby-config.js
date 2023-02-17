@@ -1,64 +1,24 @@
-require(`dotenv`).config({
-  path: `.env`,
-})
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 
 module.exports = {
   siteMetadata: {
-    siteTitle: `Cassi Gallagher-Shearer`,
-    siteTitleAlt: `Cassi Gallagher-Shearer Creative`,
+    title: "Gatsby Contentful Starter",
+    description: "Official Contentful Gatsby Starter",
   },
   plugins: [
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-image",
     {
-      resolve: `@lekoarts/gatsby-theme-minimal-blog`,
+      resolve: "gatsby-source-contentful",
       options: {
-        navigation: [
-          {
-            title: `Projects`,
-            slug: `/projects`,
-          },
-        ],
-        externalLinks: [
-          {
-            name: `Instagram`,
-            url: `https://www.instagram.com/cassigs_creative`,
-          },
-        ],
-        blogPath: `/projects`,
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        host: process.env.CONTENTFUL_HOST
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
-      },
-    },
-    `gatsby-plugin-sitemap`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
-        start_url: `/`,
-        background_color: `#fff`,
-        theme_color: `#6B46C1`,
-        display: `standalone`,
-        icons: [
-          {
-            src: `/android-chrome-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/android-chrome-512x512.png`,
-            sizes: `512x512`,
-            type: `image/png`,
-          },
-        ],
-      },
-    },
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-netlify`,
-    // `gatsby-plugin-webpack-bundle-analyser-v2`,
   ],
-}
+};
