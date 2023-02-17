@@ -15,7 +15,14 @@ class RootIndex extends React.Component {
 			<Layout>
 				{/* <Hero image={author.heroImage.gatsbyImage} title={author.name} content={author.shortBio} />
 				<ArticlePreview posts={posts} /> */}
-				<p>Homepage</p>
+				<div>
+					<h1>Hi, I'm Cassi</h1>
+					<h2>
+						I'm a front end developer currently at{" "}
+						<a href="https://www.submittable.com/">Submittable</a>
+					</h2>
+				</div>
+				<div>👋</div>
 			</Layout>
 		);
 	}
