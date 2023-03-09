@@ -17,10 +17,7 @@ class RootIndex extends React.Component {
 				<ArticlePreview posts={posts} /> */}
 				<div>
 					<h1>Hi, I'm Cassi</h1>
-					<h2>
-						I'm a front end developer currently at{" "}
-						<a href="https://www.submittable.com/">Submittable</a>
-					</h2>
+					<p className="subheader">I enjoy making (mostly) fine (sometimes) internet goods.</p>
 				</div>
 				<div>👋</div>
 			</Layout>

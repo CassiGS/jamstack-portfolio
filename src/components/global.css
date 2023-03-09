@@ -47,8 +47,17 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: var(--font-header);
   font-weight: var(--semibold);
   line-height: var(--dense);
+}
+
+h1 {
+  font-size: var(--text-4xl);
+}
+
+.subheader {
+  font-size: var(--text-2xl);
 }
 
 a {
