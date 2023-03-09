@@ -24,6 +24,8 @@
   border-bottom: 1.5px solid transparent;
   color: currentColor;
   text-decoration: none;
+  font-weight: var(--bold);
+  font-size: var(--text-xl);
 }
 
 .navigationItem a:hover {
@@ -33,11 +35,13 @@
 
 .logoLink {
   display: flex;
-  font-weight: var(--medium);
   align-items: center;
   flex-direction: row;
   flex-shrink: 0;
   gap: var(--space-md);
+  font-weight: var(--bold);
+  font-size: var(--text-xl);
+
 }
 
 @media (max-width: 767px) {

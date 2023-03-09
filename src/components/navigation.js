@@ -6,17 +6,17 @@ import * as styles from "./css/navigation.module.css";
 const Navigation = () => (
 	<nav role="navigation" className={styles.container} aria-label="Main">
 		<Link to="/" className={styles.logoLink}>
-			<span className={styles.navigationItem}>Cassi Gallagher-Shearer</span>
+			<span className={styles.navigationItem}>cassigs</span>
 		</Link>
 		<ul className={styles.navigation}>
 			<li className={styles.navigationItem}>
-				<Link to="/" activeClassName="active">
-					Home
+				<Link to="/about/" activeClassName="active">
+					about
 				</Link>
 			</li>
 			<li className={styles.navigationItem}>
 				<Link to="/blog/" activeClassName="active">
-					Blog
+					journal
 				</Link>
 			</li>
 		</ul>
