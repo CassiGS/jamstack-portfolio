@@ -1,4 +1,5 @@
 import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
 
 import "./variables.css";
 import "./global.css";
@@ -8,19 +9,28 @@ import Footer from "./footer";
 
 import * as styles from "./css/layout.module.css";
 
-class Template extends React.Component {
-	render() {
-		const { children } = this.props;
+const MainLayout = ({ children }) => {
+	const data = useStaticQuery(graphql`
+		query MainLayoutQuery {
+			contentfulLinkGroup(contentful_id: { eq: "46p7FQeAx7qw9hY6pndBCf" }) {
+				linkGroup {
+					linkName
+					linkUrl
+				}
+			}
+		}
+	`);
 
-		return (
-			<>
-				<Seo />
-				<Navigation />
-				<main className={styles.container}>{children}</main>
-				<Footer />
-			</>
-		);
-	}
-}
+	const navigationLinks = data.contentfulLinkGroup.linkGroup;
 
-export default Template;
+	return (
+		<>
+			<Seo />
+			<Navigation navigationLinks={navigationLinks} />
+			<main className={styles.container}>{children}</main>
+			<Footer />
+		</>
+	);
+};
+
+export default MainLayout;
