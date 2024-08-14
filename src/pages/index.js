@@ -2,6 +2,9 @@ import React from "react";
 import { graphql } from "gatsby";
 
 import MainLayout from "../components/layout";
+
+import * as styles from "../components/css/home.module.css";
+
 import Hero from "../components/hero";
 import ArticlePreview from "../components/article-preview";
 
@@ -12,11 +15,10 @@ const HomePage = ({ data }) => {
 		<MainLayout>
 			{/* <Hero image={author.heroImage.gatsbyImage} title={author.name} content={author.shortBio} />
 				<ArticlePreview posts={posts} /> */}
-			<div>
-				<h1>{content.headerTitle}</h1>
-				<p className="subheader">{content.headerSubtitle.headerSubtitle}</p>
+			<div className={styles.heroHeader}>
+				<h1>Hi I'm Cassi</h1>
+				<p className="subheader">I enjoy making (mostly) fine (somtimes) internet goods</p>
 			</div>
-			<div>👋</div>
 		</MainLayout>
 	);
 };

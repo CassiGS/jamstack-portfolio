@@ -1,0 +1,11 @@
+.heroHeader {
+    text-align: center;
+}
+
+.heroHeader h1 {
+    margin: 0 0 10px 0;
+}
+
+.heroHeader p {
+    margin: 0;
+}
