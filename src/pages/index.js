@@ -16,7 +16,7 @@ const HomePage = ({ data }) => {
 			{/* <Hero image={author.heroImage.gatsbyImage} title={author.name} content={author.shortBio} />
 				<ArticlePreview posts={posts} /> */}
 			<div className={styles.heroHeader}>
-				<h1>Hi I'm Cassi</h1>
+				<h1>Hi, I'm Cassi</h1>
 				<p className="subheader">I enjoy making (mostly) fine (somtimes) internet goods</p>
 			</div>
 		</MainLayout>

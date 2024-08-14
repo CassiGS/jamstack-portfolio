@@ -3,9 +3,11 @@
 }
 
 .heroHeader h1 {
+    font-size: 150px;
     margin: 0 0 10px 0;
 }
 
 .heroHeader p {
+    font-size: 40px;
     margin: 0;
 }
