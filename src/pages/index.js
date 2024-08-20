@@ -1,37 +1,94 @@
-import React from "react";
-import { graphql } from "gatsby";
+import * as React from "react"
+import { Link, graphql } from "gatsby"
 
-import MainLayout from "../components/layout";
+import Bio from "../components/bio"
+import Layout from "../components/layout"
+import Seo from "../components/seo"
 
-import * as styles from "../components/css/home.module.css";
+const BlogIndex = ({ data, location }) => {
+  const siteTitle = data.site.siteMetadata?.title || `Title`
+  const posts = data.allMarkdownRemark.nodes
 
-import Hero from "../components/hero";
-import ArticlePreview from "../components/article-preview";
+  if (posts.length === 0) {
+    return (
+      <Layout location={location} title={siteTitle}>
+        <Bio />
+        <p>
+          No blog posts found. Add markdown posts to "content/blog" (or the
+          directory you specified for the "gatsby-source-filesystem" plugin in
+          gatsby-config.js).
+        </p>
+      </Layout>
+    )
+  }
 
-const HomePage = ({ data }) => {
-	const content = data.mainContent;
+  return (
+    <Layout location={location} title={siteTitle}>
+      <Bio />
+      <ol style={{ listStyle: `none` }}>
+        {posts.map(post => {
+          const title = post.frontmatter.title || post.fields.slug
 
-	return (
-		<MainLayout>
-			{/* <Hero image={author.heroImage.gatsbyImage} title={author.name} content={author.shortBio} />
-				<ArticlePreview posts={posts} /> */}
-			<div className={styles.heroHeader}>
-				<h1>Hi, I'm Cassi</h1>
-				<p className="subheader">I enjoy making (mostly) fine (somtimes) internet goods</p>
-			</div>
-		</MainLayout>
-	);
-};
+          return (
+            <li key={post.fields.slug}>
+              <article
+                className="post-list-item"
+                itemScope
+                itemType="http://schema.org/Article"
+              >
+                <header>
+                  <h2>
+                    <Link to={post.fields.slug} itemProp="url">
+                      <span itemProp="headline">{title}</span>
+                    </Link>
+                  </h2>
+                  <small>{post.frontmatter.date}</small>
+                </header>
+                <section>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: post.frontmatter.description || post.excerpt,
+                    }}
+                    itemProp="description"
+                  />
+                </section>
+              </article>
+            </li>
+          )
+        })}
+      </ol>
+    </Layout>
+  )
+}
 
-export default HomePage;
+export default BlogIndex
+
+/**
+ * Head export to define metadata for the page
+ *
+ * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
+ */
+export const Head = () => <Seo title="All posts" />
 
 export const pageQuery = graphql`
-	query HomeQuery {
-		mainContent: contentfulHeaderBlock(contentful_id: { eq: "38zvhXG8JKZHPDa3jyz2fW" }) {
-			headerTitle
-			headerSubtitle {
-				headerSubtitle
-			}
-		}
-	}
-`;
+  {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
+      nodes {
+        excerpt
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          description
+        }
+      }
+    }
+  }
+`

@@ -1,36 +1,36 @@
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
+import * as React from "react"
+import { Link } from "gatsby"
 
-import "./variables.css";
-import "./global.css";
-import Seo from "./seo";
-import Navigation from "./navigation";
-import Footer from "./footer";
+const Layout = ({ location, title, children }) => {
+  const rootPath = `${__PATH_PREFIX__}/`
+  const isRootPath = location.pathname === rootPath
+  let header
 
-import * as styles from "./css/layout.module.css";
+  if (isRootPath) {
+    header = (
+      <h1 className="main-heading">
+        <Link to="/">{title}</Link>
+      </h1>
+    )
+  } else {
+    header = (
+      <Link className="header-link-home" to="/">
+        {title}
+      </Link>
+    )
+  }
 
-const MainLayout = ({ children }) => {
-	const data = useStaticQuery(graphql`
-		query MainLayoutQuery {
-			contentfulLinkGroup(contentful_id: { eq: "46p7FQeAx7qw9hY6pndBCf" }) {
-				linkGroup {
-					linkName
-					linkUrl
-				}
-			}
-		}
-	`);
+  return (
+    <div className="global-wrapper" data-is-root-path={isRootPath}>
+      <header className="global-header">{header}</header>
+      <main>{children}</main>
+      <footer>
+        © {new Date().getFullYear()}, Built with
+        {` `}
+        <a href="https://www.gatsbyjs.com">Gatsby</a>
+      </footer>
+    </div>
+  )
+}
 
-	const navigationLinks = data.contentfulLinkGroup.linkGroup;
-
-	return (
-		<>
-			<Seo />
-			<Navigation navigationLinks={navigationLinks} />
-			<main className={styles.container}>{children}</main>
-			<Footer />
-		</>
-	);
-};
-
-export default MainLayout;
+export default Layout
