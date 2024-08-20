@@ -6,10 +6,9 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Posts from "../components/posts"
 
-const BlogIndex = ({ data, location }) => {
+const Journal = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
-  const shortPosts = posts.slice(0, 3)
 
   if (posts.length === 0) {
     return (
@@ -26,18 +25,13 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <h1>Hi, I'm Cassi</h1>
-      <Bio />
-
-      <h2>Journal</h2>
-      <div className="home__posts">
-        <Posts posts={shortPosts} />
-      </div>
+      <h1>Journal</h1>
+      <Posts posts={posts} />
     </Layout>
   )
 }
 
-export default BlogIndex
+export default Journal
 
 /**
  * Head export to define metadata for the page
