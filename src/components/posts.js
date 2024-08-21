@@ -22,14 +22,6 @@ const Posts = ({ posts }) => {
                 </h3>
                 <small>{post.frontmatter.date}</small>
               </header>
-              <section>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: post.frontmatter.description || post.excerpt,
-                  }}
-                  itemProp="description"
-                />
-              </section>
             </article>
           </li>
         )

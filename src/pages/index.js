@@ -1,5 +1,6 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -24,9 +25,34 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <h1>Hi, I'm Cassi</h1>
+      <div className="bio">
+        <StaticImage
+          className="bio-avatar"
+          layout="fixed"
+          formats={["auto", "webp", "avif"]}
+          src="../images/profile-pic.jpg"
+          width={50}
+          height={50}
+          quality={95}
+          alt="Profile picture"
+        />
+        <p>
+          Hi, I'm Cassi. I'm a frontend web developer with an interest in CMS
+          development, UI/UX, and design and everything in-between. Currently
+          based out of Bellingham, WA - I'm working on keeping the marketing
+          website afloat over at{" "}
+          <a href="https://www.submittable.com">Submittable</a>. When I'm not
+          sitting at my computer, you'll probably find me hiting up one of my
+          local breweries, hanging out with my dogs, crocheting cozy cowls, or
+          attempting to learn yet another new hobby (it's probably fiber based.)
+        </p>
+      </div>
 
       <h2>Journal</h2>
+      <div className="home__posts">
+        <Posts posts={shortPosts} />
+      </div>
+      <h2>Projects</h2>
       <div className="home__posts">
         <Posts posts={shortPosts} />
       </div>
