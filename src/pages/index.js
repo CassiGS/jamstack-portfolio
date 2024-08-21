@@ -31,8 +31,8 @@ const BlogIndex = ({ data, location }) => {
           layout="fixed"
           formats={["auto", "webp", "avif"]}
           src="../images/profile-pic.jpg"
-          width={50}
-          height={50}
+          width={200}
+          height={200}
           quality={95}
           alt="Profile picture"
         />

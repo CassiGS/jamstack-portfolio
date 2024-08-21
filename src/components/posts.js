@@ -20,7 +20,7 @@ const Posts = ({ posts }) => {
                     <span itemProp="headline">{title}</span>
                   </Link>
                 </h3>
-                <small>{post.frontmatter.date}</small>
+                | <small>{post.frontmatter.date}</small>
               </header>
             </article>
           </li>
