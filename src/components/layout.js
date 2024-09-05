@@ -32,7 +32,7 @@ const Layout = ({ location, title, children }) => {
       </header>
 
       <main>{children}</main>
-      <footer>
+      <footer className="global-footer">
         © {new Date().getFullYear()}, Built with
         {` `}
         <a href="https://www.gatsbyjs.com">Gatsby</a>. Version 1.0

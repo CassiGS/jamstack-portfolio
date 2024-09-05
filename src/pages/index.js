@@ -23,7 +23,14 @@ const HomePage = ({ data, location }) => {
   //   }
   return (
     <Layout location={location} title={siteTitle}>
-      Hello
+      <main className="home__wrapper">
+        <div className="home__content">
+          <h1>Hi, I'm Cassi.</h1>
+          <p className="home__content-subhead">
+            I make (mostly) fine (sometimes) internet goods.
+          </p>
+        </div>
+      </main>
     </Layout>
   )
 }
