@@ -9,13 +9,13 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `cassigs.`,
+    title: `Cassigs`,
     author: {
       name: `Cassi Gallagher-Shearer`,
       summary: `Maker of (mostly) fine (sometimes) internet goods`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `Maker of (mostly) fine (sometimes) internet goods`,
+    siteUrl: `https://www.cassigs.com/`,
     social: {
       github: `#`,
       instagram: `#`,

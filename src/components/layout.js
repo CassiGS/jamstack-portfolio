@@ -5,20 +5,13 @@ const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
 
-  let header
+  let headlink
 
   if (isRootPath) {
-    header = (
-      <h1 className="main-heading">
-        <Link to="/">
-          <span>CassiGS</span> // maker of (mostly) fine (sometimes) internet
-          goods
-        </Link>
-      </h1>
-    )
+    headlink = <span classnName="nav__home-title">CassiGS</span>
   } else {
-    header = (
-      <Link className="header-link-home" to="/">
+    headlink = (
+      <Link className="nav__link" to="/">
         <span>CassiGS</span>
       </Link>
     )
@@ -26,13 +19,23 @@ const Layout = ({ location, title, children }) => {
 
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header className="global-header">{header}</header>
+      <header className="global-header">
+        <div>{headlink}</div>
+        <div>
+          <Link className="nav__link" to="/about">
+            About
+          </Link>
+          <Link className="nav__link" to="/journal">
+            Journal
+          </Link>
+        </div>
+      </header>
 
       <main>{children}</main>
       <footer>
         © {new Date().getFullYear()}, Built with
         {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+        <a href="https://www.gatsbyjs.com">Gatsby</a>. Version 1.0
       </footer>
     </div>
   )
