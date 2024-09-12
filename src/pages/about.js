@@ -10,16 +10,17 @@ const AboutPage = ({ location }) => {
         <h1>About</h1>
         <section className="interor__subhead">
           <p>
-            Hey there, I'm Cassi. I'm a designer, web developer, and all around
+            Hey there, I'm Cassi. I'm a web developer, designer, and all around
             too-many-hobbies-ist. By day I work on the marketing team as a Web
-            Engineer with the fine people at Submittable. I enjoy frontend web
-            development, and am fascinated by the intersection of art, design,
-            information design, data visualization. This is all to say, I enjoy
-            CSS
+            Engineer with the fine people at{" "}
+            <a href="https://www.submittable.com/">Submittable</a>. I enjoy
+            frontend web development, and am interested in the intersection of
+            the web, graphic design, information design, and UX. This is all to
+            say, I enjoy CSS.
           </p>
           <p>
-            The rest of the time I hang out in Bellingham, WA painting, drawing,
-            illustrating, knitting, crocheting, hanging out with dogs, or maybe
+            The rest of the time I hang out in Bellingham, WA, drawing, playing
+            with yarn, hanging out with dogs, video gaming inside or maybe
             exploring outside.
           </p>
         </section>
