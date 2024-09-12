@@ -27,7 +27,7 @@ const HomePage = ({ data, location }) => {
         <div className="home__content">
           <h1>Hi, I'm Cassi.</h1>
           <p className="home__content-subhead">
-            I make (mostly) fine (sometimes) internet goods.
+            Maker of (mostly) fine (sometimes) internet goods.
           </p>
         </div>
       </main>
@@ -49,19 +49,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-      }
-    }
-    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
-      nodes {
-        excerpt
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          title
-          description
-        }
       }
     }
   }
