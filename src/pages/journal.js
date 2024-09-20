@@ -62,6 +62,8 @@ export const journalPQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          topic
+          type
         }
       }
     }
