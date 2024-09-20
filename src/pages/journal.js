@@ -18,14 +18,19 @@ const JournalPage = ({ data, location }) => {
           <section className="blog__list">
             {posts.map(post => {
               console.log(post)
+              const postListItem = post.frontmatter
               return (
                 <ul>
-                  <li className="blog__list-item--pill">Topic A</li>
-                  <li className="blog__list-item--pill">Topic A</li>
-                  <li className="blog__list-item--date">
-                    Last Updated: Jan 3 2022
+                  <li className="blog__list-item--pill">
+                    {postListItem.topic}
                   </li>
-                  <li>Title</li>
+                  <li className="blog__list-item--pill">{postListItem.type}</li>
+                  <li className="blog__list-item--date">
+                    Last Updated: {postListItem.date}
+                  </li>
+                  <li>
+                    <a href={post.fields.slug}>{postListItem.title}</a>
+                  </li>
                 </ul>
               )
             })}

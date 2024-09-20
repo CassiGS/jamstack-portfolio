@@ -101,6 +101,7 @@ module.exports = {
                 return Object.assign({}, node.frontmatter, {
                   description: node.excerpt,
                   date: node.frontmatter.date,
+                  topic: node.frontmatter.topic,
                   url: site.siteMetadata.siteUrl + node.fields.slug,
                   guid: site.siteMetadata.siteUrl + node.fields.slug,
                   custom_elements: [{ "content:encoded": node.html }],
@@ -118,6 +119,7 @@ module.exports = {
                   frontmatter {
                     title
                     date
+                    topic
                   }
                 }
               }
