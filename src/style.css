@@ -50,6 +50,7 @@
   --fontWeight-bold: 700;
   --fontWeight-black: 900;
   --color-heading-black: #000;
+  --color-accent: #d1dce5;
 }
 /* HTML elements */
 
@@ -135,7 +136,7 @@ p {
   font-size: var(--fontSize-2);
 }
 
-.global-header a {
+.global-header a:not(:first-child) {
   text-decoration: none;
   color: var(--color-heading-black);
   margin-left: var(--spacing-6);
@@ -160,4 +161,29 @@ p {
 
 .interor__subhead p {
   font-size: var(--fontSize-2);
+}
+
+.blog__list ul {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 2fr;
+  padding-inline-start: 0;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+.blog__list ul li {
+  list-style-type: none;
+}
+
+.blog__list-item--pill {
+  background-color: var(--color-heading-black);
+  color: var(--color-accent);
+  text-align: center;
+  padding: var(--spacing-1);
+  border-radius: var(--spacing-4);
+}
+
+.blog__list-item--date {
+  font-style: italic;
 }
