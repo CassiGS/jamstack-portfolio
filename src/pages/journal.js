@@ -21,10 +21,14 @@ const JournalPage = ({ data, location }) => {
               const postListItem = post.frontmatter
               return (
                 <ul>
-                  <li className="blog__list-item--pill">
-                    {postListItem.topic}
+                  <li className="blog__list-item--pill-group">
+                    <span className="blog__list-item--pill">
+                      {postListItem.topic}
+                    </span>
+                    <span className="blog__list-item--pill">
+                      {postListItem.type}
+                    </span>
                   </li>
-                  <li className="blog__list-item--pill">{postListItem.type}</li>
                   <li className="blog__list-item--date">
                     Last Updated: {postListItem.date}
                   </li>

@@ -164,16 +164,21 @@ p {
 }
 
 .blog__list ul {
-  width: 60%;
+  /* width: 60%; */
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr 2fr;
+  /* grid-template-columns: 1fr 1fr 2fr 2fr; */
   padding-inline-start: 0;
   align-items: center;
-  gap: var(--spacing-3);
+  gap: var(--spacing-2);
 }
 
 .blog__list ul li {
   list-style-type: none;
+}
+
+.blog__list-item--pill-group {
+  display: flex;
+  gap: 10px;
 }
 
 .blog__list-item--pill {
@@ -182,6 +187,7 @@ p {
   text-align: center;
   padding: var(--spacing-1);
   border-radius: var(--spacing-4);
+  width: 100px;
 }
 
 .blog__list-item--date {
