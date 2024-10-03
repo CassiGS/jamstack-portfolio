@@ -172,6 +172,14 @@ p {
   gap: var(--spacing-2);
 }
 
+@media (min-width: 1000px) {
+  .blog__list ul {
+    width: 50vw;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: var(--spacing-3);
+  }
+}
+
 .blog__list ul li {
   list-style-type: none;
 }
