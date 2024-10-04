@@ -4,12 +4,12 @@ import { graphql } from "gatsby"
 import Seo from "../components/seo"
 import Layout from "../components/layout"
 
-const JournalPage = ({ data, location }) => {
+const WorkPage = ({ data, location }) => {
   const posts = data.allMarkdownRemark.nodes
   return (
     <Layout location={location}>
       <main className="interior__wrapper">
-        <h1>Journal</h1>
+        <h1>Work</h1>
         <section className="interor__subhead">
           <p>
             Learnings, musings, internet (and non-internet) projects I’m working
@@ -20,22 +20,9 @@ const JournalPage = ({ data, location }) => {
               console.log(post)
               const postListItem = post.frontmatter
               return (
-                <ul>
-                  <li className="blog__list-item--pill-group">
-                    <span className="blog__list-item--pill">
-                      {postListItem.topic}
-                    </span>
-                    <span className="blog__list-item--pill">
-                      {postListItem.type}
-                    </span>
-                  </li>
-                  <li className="blog__list-item--date">
-                    Last Updated: {postListItem.date}
-                  </li>
-                  <li>
-                    <a href={post.fields.slug}>{postListItem.title}</a>
-                  </li>
-                </ul>
+                <>
+                  <p>{postListItem.title} </p> <p>{postListItem.topic} </p>
+                </>
               )
             })}
           </section>
@@ -45,18 +32,21 @@ const JournalPage = ({ data, location }) => {
   )
 }
 
-export const Head = () => <Seo title="Journal" />
+export const Head = () => <Seo title="Work" />
 
-export default JournalPage
+export default WorkPage
 
-export const journalPQuery = graphql`
+export const workPQuery = graphql`
   {
     site {
       siteMetadata {
         title
       }
     }
-    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/content/work/" } }
+      sort: { frontmatter: { date: DESC } }
+    ) {
       nodes {
         excerpt
         fields {
@@ -65,9 +55,11 @@ export const journalPQuery = graphql`
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
           title
-          description
           topic
-          type
+          featureImage
+          technology
+          blogPost
+          liveLink
         }
       }
     }
