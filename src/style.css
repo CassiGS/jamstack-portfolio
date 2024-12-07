@@ -71,6 +71,7 @@ body {
   font-family: var(--font-body);
   font-size: var(--fontSize-1);
   color: var(--color-text);
+  background-color: #f4f1e8;
 }
 
 main {
@@ -109,6 +110,12 @@ p {
   padding: var(--spacing-0);
 }
 
+a {
+  color: #ff5139;
+  text-decoration: none;
+  font-weight: 500;
+}
+
 /* Custom classes */
 
 .global-wrapper {
@@ -138,7 +145,7 @@ p {
 
 .global-header a:not(:first-child) {
   text-decoration: none;
-  color: var(--color-heading-black);
+  color: #ff5139;
   margin-left: var(--spacing-6);
 }
 
@@ -152,6 +159,10 @@ p {
 
 .home__content {
   text-align: center;
+}
+
+.nav__home-title {
+  color: #ff5139;
 }
 
 .home__content-subhead {
@@ -174,7 +185,7 @@ p {
 
 @media (min-width: 1000px) {
   .blog__list ul {
-    width: 50vw;
+    width: 65vw;
     grid-template-columns: 1fr 1fr 2fr;
     gap: var(--spacing-3);
   }
