@@ -21,6 +21,7 @@ module.exports = {
       instagram: `#`,
     },
   },
+  pathPrefix: "/jamstack-portfolio",
   plugins: [
     `gatsby-plugin-image`,
     {
