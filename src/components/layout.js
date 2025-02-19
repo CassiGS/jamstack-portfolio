@@ -25,9 +25,9 @@ const Layout = ({ location, title, children }) => {
           <Link className="nav__link" to="/about">
             About
           </Link>
-          {/* <Link className="nav__link" to="/journal">
+          <Link className="nav__link" to="/journal">
             Journal
-          </Link> */}
+          </Link>
         </div>
       </header>
 
