@@ -206,7 +206,8 @@ a {
   text-align: center;
   padding: var(--spacing-1);
   border-radius: var(--spacing-4);
-  width: 100px;
+  width: 140px;
+  padding: 10px;
 }
 
 .blog__list-item--date {

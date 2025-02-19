@@ -1,6 +1,6 @@
 ---
-title: Redesigning my website for the 1,000th time
-topic: Web Dev
+title: A Thousand Redesigns
+topic: Developer Docs
 type: Note
 date: "2024-08-21T23:02:22.957Z"
 description: Notes on redesigning and redesigning again.
