@@ -213,3 +213,12 @@ a {
 .blog__list-item--date {
   font-style: italic;
 }
+
+.blog-post {
+  width: 40vw;
+  margin: 0 auto;
+}
+
+.blog-post h1 {
+  font-size: var(--fontSize-7);
+}

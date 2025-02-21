@@ -6,7 +6,7 @@ date: "2025-02-19T23:02:22.957Z"
 description: Notes on redesigning and redesigning again.
 ---
 
-Hello and welcome. If you're here, you've found my little corner of the internet. Grab your travel towel: https://hitchhikers.fandom.com/wiki/Towel and stay a while.
+Hello and welcome. If you're here, you've found my little corner of the internet. Grab your [travel towel](https://hitchhikers.fandom.com/wiki/Towel) and hang out.
 
 As someone who works on the Internet(TM), the classic advice is to always be working on a side project. I don't always follow that advice. Partly it's because I believe in brain cross-training of sorts (That's science, probably. You could google it, probably), and I think there is value in having non-work-focused side projects and hobbies. But that's a post for the other day.
 
