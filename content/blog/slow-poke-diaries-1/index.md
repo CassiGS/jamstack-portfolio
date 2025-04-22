@@ -1,41 +1,29 @@
 ---
 title: Running tension (not the muscle kind)
-topic: The Slowpoke Diaries
+topic: Slowpoke Diaries
 type: Note
 date: "2025-04-21T23:02:22.957Z"
 description: Thoughts on balancing tension.
 ---
 
-Hello and welcome. If you're here, you've found my little corner of the internet. Grab your [travel towel](https://hitchhikers.fandom.com/wiki/Towel) and hang out.
+Sign up for a spring run they said. It'd be fun they said\*.
 
-I recently redid my website here. I've been meaning to for a while, but I had a hard time pinning down what I wanted to do with it, or even what I wanted it to look like.
+\*(No one signed up for any of those things).
 
-As someone who works on The Internet&#8482;, the classic advice is to always be working on a side project. I don't always follow that advice. Partly it's because I believe in brain cross-training of sorts (that's [science](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWpleHRsNW9hbGkwb3ZxZDdwOXIyNGRrOTZnOGtjcm55ZjUzeXlvaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Zy7s96dP38MlQe3OjG/giphy.gif), probably), and I think there is value in having non-work-focused side projects and hobbies. But that's a post for another day.
+I signed up for the Vancouver Half Marathon this spring. Being someone in north Washington state, getting up to Vancouver is easy and pretty enjoyable. Much of the run is through the beautiful Stanley park. It sounded like a great time.
 
-But the real reason I often don't...is scope creep.
+Until you realize you're training in the winter.
 
-Turns out I'm a terrible project manager and an even **worse** client. That girl keeps pitching wildly ambitious projects far outside the scope of the original project, and I do nothing to stop her.
+This will officially be my fourth half marathon, which is an odd thing for me to tell people because I feel like it marks me as A Runner. And I don't necessarily feel like A Runner. It's not imposer syndrome (well at least mostly), but I feel like my status as A Runner is a balance of tensions.
 
-Like say a personal website. I've got a few ideas on things I want to add to this site and how I want to revamp it, but I also know none of those things will ever get done if I scrap it all continuously to redesign it again for the 1,000th time, only to let scope creep happen again, get overwhelmed and abandoned the project together.
+I'm not the fastest runner, and while I don't think speed makes a runner, I'm pretty slow for even most slow running standards. While again, I think this is an absolutely ok thing and people should find ways to move in ways that bring them joy, that said, even after 4 half marathons I still average a 12-15 min mile.
 
-So if you too are a recovering perfectionist who is trying to remind themselves to take baby steps, enjoy progress over perfection, and all that good stuff - well, know that you are not alone.
+I both love and loath running. I love getting outside, I love getting in some movement, I'm always (mostly) happy when I get out for a run. But I also have a hard time motivating myself without external motivators.
 
-## V1
+I am both an indoor and an outdoor kid. I will happily go on a hike and happily stay on the couch all day to watch a Lord of the Rings Marathon.
 
-To help with the scope of a very very basic v1 of the project. My name! Literally I could handle just a name, right? So that's what I did. Design up a basic homepage with a cute tag line. Done.
+I think a lot about tension in the world of creativity ([Austin Kleons writes and talks alot about this](https://austinkleon.substack.com/p/the-creative-tensions)). The push and pull of things. It's easy not to feel like A Runner because I don't run in the way a lot of elite or even hard core runners. But I also feel like A Runner because..well...I like getting out for runs.
 
-From there I knew I wanted to start out with the site on Gatsby. I do that for my day job but I've never actually set it up from scratch. Could be a good thing to learn. I used a [Gatsby starter blog](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog/) just get some basic structure in place.
+I think interesting stuff lives in the inbetween of that tension. In this case the space inbetween being and not being a runner. There's a weird balance of looking at these elements and using them as motivation of wanting to get better while also balancing a feeling of good enough, because this is all supposed to be fun.
 
-(P.S This is very obvious if you visit my GitHub page. That README is on my todo list)
-
-For the hosting/site I tried to get the page set up through Github pages, but I found it more tedious than I wanted for a staticly built site, so I went what I know. And what Gatsby knows. I used [Netlify](https://www.netlify.com/).
-
-## V2-ish
-
-The blog for the Gatsby starter blog uses markup, so I am sticking with that for now (again, keeping things easy right?). At some point I might switch to a content managment system - but for now, this works well.
-
-I added some basic tags, but they don't do anything yet. At some point I'll get those to point to relevant posts.
-
-V3-ish and beyond
-
-The future is unlimited, [Glinda](https://64.media.tumblr.com/da01c67403778f79745deae9ea25db27/b9328374e39cdbb9-70/s540x810/c070b487c738833188e203b778971324a439be92.gifv). In the immediate future is more blog build out. A projects section. Maybe a redesign homepage. But for now, a basic b website and some scope creep tamed. For today.
+I think tensions are worth exploring in all aspects of life - and if you're also a runner/a fan of the Nike Run Club app let's just say this is about running and this is not about running.
