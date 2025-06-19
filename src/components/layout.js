@@ -28,6 +28,9 @@ const Layout = ({ location, title, children }) => {
           <Link className="nav__link" to="/journal">
             Journal
           </Link>
+          <Link className="nav__link" to="/now">
+            Now
+          </Link>
         </div>
       </header>
 
