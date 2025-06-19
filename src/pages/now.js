@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 
 const Now = ({ data, location }) => {
   const posts = data.allMarkdownRemark.nodes
+  console.log(posts)
   return (
     <Layout location={location}>
       <main className="interior__wrapper">
@@ -16,29 +17,27 @@ const Now = ({ data, location }) => {
             Inspired by the pages at{" "}
             <a href="https://nownownow.com/about">nownownow.com</a>.
           </p>
-          <section className="blog__list">
-            {/* {posts.map(post => {
-              console.log(post)
-              const postListItem = post.frontmatter
+          <section className="now__list">
+            {posts.map(post => {
               return (
-                <ul>
-                  <li className="blog__list-item--pill-group">
-                    <span className="blog__list-item--pill">
-                      {postListItem.topic}
-                    </span>
-                    <span className="blog__list-item--pill">
-                      {postListItem.type}
-                    </span>
-                  </li>
-                  <li className="blog__list-item--date">
-                    Last Updated: {postListItem.date}
-                  </li>
-                  <li>
-                    <a href={post.fields.slug}>{postListItem.title}</a>
-                  </li>
-                </ul>
+                <>
+                  <header>
+                    <h2 itemProp="headline">{post.frontmatter.title}</h2>
+                  </header>
+                  <article
+                    className="now-post"
+                    itemScope
+                    itemType="http://schema.org/Article"
+                  >
+                    <section
+                      dangerouslySetInnerHTML={{ __html: post.html }}
+                      itemProp="articleBody"
+                    />
+                    <hr />
+                  </article>
+                </>
               )
-            })} */}
+            })}
           </section>
         </section>
       </main>
@@ -58,7 +57,7 @@ export const nowPageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/content/blog/" } }
+      filter: { fileAbsolutePath: { regex: "/content/now/" } }
       sort: { frontmatter: { date: DESC } }
     ) {
       nodes {
@@ -66,6 +65,7 @@ export const nowPageQuery = graphql`
         fields {
           slug
         }
+        html
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
           title
