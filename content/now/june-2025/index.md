@@ -1,5 +1,6 @@
 ---
 title: June 2025
+monthID: june
 topic: Now
 status: In Progress
 date: "2025-06-19T00:00:00Z"

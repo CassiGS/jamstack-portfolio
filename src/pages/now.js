@@ -20,12 +20,14 @@ const Now = ({ data, location }) => {
           <section className="now__list">
             {posts.map(post => {
               return (
-                <>
+                <div id={post.frontmatter.monthID}>
                   <header>
-                    <h2 itemProp="headline">{post.frontmatter.title}</h2>
+                    <h2 itemProp="now-page__headline">
+                      {post.frontmatter.title}
+                    </h2>
                   </header>
                   <article
-                    className="now-post"
+                    className="now-post__article"
                     itemScope
                     itemType="http://schema.org/Article"
                   >
@@ -35,7 +37,7 @@ const Now = ({ data, location }) => {
                     />
                     <hr />
                   </article>
-                </>
+                </div>
               )
             })}
           </section>
@@ -71,6 +73,7 @@ export const nowPageQuery = graphql`
           title
           description
           topic
+          monthID
           type
         }
       }
