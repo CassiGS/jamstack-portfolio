@@ -116,6 +116,7 @@ module.exports = {
                   description: node.excerpt,
                   date: node.frontmatter.date,
                   topic: node.frontmatter.topic,
+                  monthID: node.frontmatter.monthID,
                   url: site.siteMetadata.siteUrl + node.fields.slug,
                   guid: site.siteMetadata.siteUrl + node.fields.slug,
                   custom_elements: [{ "content:encoded": node.html }],
@@ -131,6 +132,7 @@ module.exports = {
                     slug
                   }
                   frontmatter {
+                    monthID
                     title
                     date
                     topic

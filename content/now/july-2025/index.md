@@ -1,40 +1,38 @@
 ---
-title: June 2025
-monthID: june
+title: July 2025
+monthID: july
 topic: Now
 status: In Progress
-date: "2025-06-19T00:00:00Z"
-description: What I'm up to June 2025
+date: "2025-07-10T00:00:00Z"
+description: What I'm up to July 2025
 ---
 
 ### Media Digest
 
 #### Read/Reading
 
-- [The Hundred Years' War on Palestine](https://bookshop.org/p/books/the-hundred-years-war-on-palestine-a-history-of-settler-colonialism-and-resistance-1917-2017-rashid-khalidi/230482)
-- [The Frozen River](https://bookshop.org/p/books/the-frozen-river-ariel-lawhon/20335369?ean=9780593312070&next=t)
 - [Doppelganger: A Trip into the Mirror World](https://bookshop.org/p/books/doppelganger-a-trip-into-the-mirror-world-naomi-klein/20025222?ean=9781250338143&next=t)
 
 #### Watching: 
 
 - [Daredevil (Original Netflix)](<https://en.wikipedia.org/wiki/Daredevil_(TV_series)>)
-- [Arrested Development](https://en.wikipedia.org/wiki/Arrested_Development)
+- [The Good Place](https://en.wikipedia.org/wiki/The_Good_Place) (I missed the boat on this show the first time around but I trust Mike Schur with my workplace comedies so, glad to give this one a go)
 
 #### Weekly Movie Nights \*\*
 
-- [Anastasia (1997 animated version)](<https://en.wikipedia.org/wiki/Anastasia_(1997_film)>)
-- [Princess and the Frog (2009 disney)](https://en.wikipedia.org/wiki/The_Princess_and_the_Frog)
+_What is Move night?_
+
+- [Luca](<https://en.wikipedia.org/wiki/Luca_(2021_film)>)
 
 #### Playing
 
-- [Disney Dream light Valley](https://en.wikipedia.org/wiki/Disney_Dreamlight_Valley)
-- [Balatro](https://en.wikipedia.org/wiki/Balatro) (the hold this game has on me)
-- Blue Prince (I’m a sucker for a good puzzle game)
+- [Blue Prince](https://en.wikipedia.org/wiki/Blue_Prince) (You should see my apple notes folder for this - it's getting a little guy-with-photos-and-red-string)
 
 #### Crafting
 
 - A [Flipdana](https://www.ravelry.com/patterns/library/flipdana) (Details on my [ravelry page](https://www.ravelry.com/projects/CassiGS/flipdana) for knitting nerds here)
 - A [Slade](https://brooklyntweed.com/products/slade?srsltid=AfmBOoqhTs91HRu26HWYtRDw1EEXPi1b0d8zRt3EYmueJp7gD-ELhxq6) cardigan for my husband
+- A [Vacation Vest](https://www.ravelry.com/patterns/library/vacation-vest)
 
 ### Monthly Recap
 
