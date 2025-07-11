@@ -20,7 +20,7 @@ description: What I'm up to July 2025
 
 #### Weekly Movie Nights \*\*
 
-_What is Move night?_
+[What is movie night?](/now#june)
 
 - [Luca](<https://en.wikipedia.org/wiki/Luca_(2021_film)>)
 
@@ -36,6 +36,4 @@ _What is Move night?_
 
 ### Monthly Recap
 
-- I started a Now page! A page that I’ve seen around the internet and really like, but I’ve had trouble getting it to stick for me. However I’ve stumbled across a few monthly formats (my biggest inspiration coming from [Maggie Appleton](https://maggieappleton.com/now)). This seemed a lot more attainable to me then a semi-static page that I needed to remember to update every now and again.
-- \*\* _What is movie night?_ Every week (-ish, as best we can) my bestie and I do a cross-country Sunday Movie Night (she being in New York and myself being in Washington State). Well, given the time zones it’s more of a Movie Early Evening for me.We pick a movie, queue it up, and spend the movie chatting away. We often pick a movie last-minute. We often pick [Wine Country](https://www.imdb.com/title/tt8169446/) (a wildly underrated (IMO) comedy starring several female comedian powerhouses). I usually make some popcorn. I’ve thought about trying to theme it to our movie, but I rarely do. I _do_ often eat nearly all of it before we start. This is also my dog’s favorite night, because I’m a superbly messy popcorn eater.
-- I’ve been biking a lot more! I’ve been slowly influenced by other artists I follow who often talk about their love of bikes (namely [Austin Kleon](https://austinkleon.substack.com/p/adventures-on-two-wheels) and [Lisa Congdon](https://blog.smithoptics.com/b/lisa-congdon-on-the-intersection-of-bikes-and-art/)). I’m also being slowly but surely influenced by my small mountain biking town (though mountain biking isn’t really on my radar, _yet_). I signed up for [Tour De Whatcom](https://tourdewhatcom.com/), a local bike tour, at the end of July. It’s 44 miles which to the bike world is pretty small, but to getting back into the biking world is quite a bit. So, as a result, I’ve been biking more.
+- Summer is in full swing, and it's a summer of bikes. In addition to [Tour De Whatcom](https://tourdewhatcom.com/) in a couple of weeks, hordes of mountain bikers will be over taking our town for [Northwest Tuneup](https://nwtuneup.com/). My husband will be vending his business [48 Contours](https://48contours.com/) so excited for that.
