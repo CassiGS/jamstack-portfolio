@@ -29,7 +29,9 @@ So I drafted my new plan. Spoiler: this initial plan does not work. But go on th
 Here's how it would look:
 
 Logo Set A: 1 2 3 4
+
 Logo Set B: 5 6 7 8
+
 Logo Set C: 9 10 11 12
 
 Then, for each line, I would group them together in alternating sets:
@@ -37,7 +39,9 @@ Then, for each line, I would group them together in alternating sets:
 Like so:
 
 Line 1: A B A
+
 Line 2 : B C B
+
 Line 3 C A C
 
 My thinking was this would allow a smaller duplicated set placed at the tail ends of each other so that it had that seamless switch over that you get from the duplication, without having to repeat 12 logos for each line. My page now has 36 logos on it, which would have been the original number if I had 12 logos each, for three lines - vs 72. ((12x12)x3)
@@ -55,7 +59,9 @@ That said, after fiddling around with the solution, I realized that between the 
 Ok, new plan:
 
 Row 1: 1 2 3 4 (repeated)
+
 Row 2: 5 6 7 8 (repeated)
+
 Row 3: 9 10 11 12 (repeated)
 
 Bonus to this approach, I somehow actually managed to reduce the amount of logos I need on the site. From 36 down to 24! I may try to fiddle with this again in the future just to see if I can get that reverse non-duplication method working. But for my sanity and my deadline - this will work great for now.
