@@ -202,7 +202,7 @@ a {
 
 .blog__list-item--pill {
   background-color: var(--color-heading-black);
-  color: var(--color-accent);
+  color: #fff;
   text-align: center;
   padding: var(--spacing-1);
   border-radius: var(--spacing-4);
