@@ -68,6 +68,8 @@ export const journalPQuery = graphql`
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
           title
+          topic
+          type
         }
       }
     }

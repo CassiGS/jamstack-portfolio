@@ -34,9 +34,7 @@ Logo Set B: 5 6 7 8
 
 Logo Set C: 9 10 11 12
 
-Then, for each line, I would group them together in alternating sets:
-
-Like so:
+Then, for each line, I would group them together in alternating sets. Like so:
 
 Line 1: A B A
 
